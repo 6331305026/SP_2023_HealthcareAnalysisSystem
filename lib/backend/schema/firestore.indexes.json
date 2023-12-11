@@ -1,0 +1,78 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "expense_summary",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "department",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "update_date",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "level",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "health",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "person_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "DateTime",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "prediction_diabetes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "health_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "timestamp",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "prediction_heart",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "health_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "timestamp",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "prediction_expense",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "health_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "timestamp",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ]
+}

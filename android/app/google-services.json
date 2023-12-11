@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "192303936347",
+    "project_id": "dietz-healthcare-8c984",
+    "storage_bucket": "dietz-healthcare-8c984.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192303936347:android:ee641aed846bc0ef74207e",
+        "android_client_info": {
+          "package_name": "asia.dietz.medgraph"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192303936347-jpreici44jb101h3toss9ru9slolre35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMBz0A8gICam3mxjSReeS2IY6MhPMla1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192303936347-jpreici44jb101h3toss9ru9slolre35.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "192303936347-7bmep10g3bo7m72i153r21e9s4jqch9l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "asia.dietz.medgraph"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

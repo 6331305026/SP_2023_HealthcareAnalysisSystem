@@ -1,0 +1,95 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{document} {
+      allow create: if request.auth.uid == document;
+      allow read: if request.auth.uid == document;
+      allow write: if request.auth.uid == document;
+      allow delete: if false;
+    }
+
+    match /person/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /health/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /department/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /expense_summary/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /expense_overall/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /prediction_expense/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /summary_heart/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /summary_diabetes/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /prediction_heart/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /prediction_diabetes/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /expln_summary_heart/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /expln_summary_diabetes/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if false;
+      allow delete: if false;
+    }
+  }
+}
